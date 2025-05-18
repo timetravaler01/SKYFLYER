@@ -1,137 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>SkyFlyer - Trusted Flight Booking</title>
-<style>
-  /* Reset & base */
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  body {
-    margin:0; padding:0;
-    font-family: 'Poppins', sans-serif;
-    background: #f7faff;
-    color: #1a1a1a;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkyFlyer - Trusted Flight Booking</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f7faff;
+      color: #1a1a1a;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-  /* Container */
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px 40px;
-  }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
 
-  /* Header */
-  header {
-    background: linear-gradient(135deg, #1e90ff, #00bfff);
-    padding: 20px 0;
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: 3px;
-    box-shadow: 0 4px 10px rgba(30,144,255,0.5);
-  }
+    header {
+      background: linear-gradient(135deg, #1e90ff, #00bfff);
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 3px;
+      box-shadow: 0 4px 10px rgba(30,144,255,0.5);
+    }
 
-  /* Hero Section */
-  .hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 30px;
-    gap: 30px;
-  }
-  .hero-text {
-    flex: 1 1 400px;
-  }
-  .hero-text h1 {
-    font-size: 2.8rem;
-    margin-bottom: 15px;
-    color: #004aad;
-  }
-  .hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #555;
-  }
-  .call-button {
-    background: #007aff;
-    color: white;
-    padding: 18px 48px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    border-radius: 60px;
-    box-shadow: 0 10px 20px rgba(0,122,255,0.6);
-    transition: background 0.3s ease;
-    display: inline-block;
-  }
-  .call-button:hover {
-    background: #005bb5;
-  }
-  .hero-image {
-    flex: 1 1 400px;
-  }
-  .hero-image img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  }
-
-  /* Trust Section */
-  .trust-section {
-    margin-top: 60px;
-    text-align: center;
-  }
-  .trust-section h2 {
-    color: #004aad;
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  .trust-icons {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 25px;
-  }
-  .trust-icons img {
-    height: 60px;
-    filter: grayscale(0.2);
-    transition: filter 0.3s ease;
-  }
-  .trust-icons img:hover {
-    filter: grayscale(0);
-  }
-  .trust-text {
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #555;
-  }
-
-  /* Footer */
-  footer {
-    margin-top: 60px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #999;
-    padding-bottom: 20px;
-  }
-
-  /* Responsive */
-  @media (max-width: 800px) {
     .hero {
-      flex-direction: column;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 30px;
+      gap: 30px;
     }
-    .hero-image, .hero-text {
-      flex: 1 1 100%;
+    .hero-text {
+      flex: 1 1 400px;
     }
-  }
-</style>
+    .hero-text h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      color: #004aad;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #555;
+    }
+    .call-button {
+      background: #007aff;
+      color: white;
+      padding: 18px 48px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-radius: 60px;
+      box-shadow: 0 10px 20px rgba(0,122,255,0.6);
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+    .call-button:hover {
+      background: #005bb5;
+    }
+    .hero-image {
+      flex: 1 1 400px;
+    }
+    .hero-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .trust-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+    .trust-section h2 {
+      color: #004aad;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .trust-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 25px;
+      font-size: 1.5rem;
+    }
+    .trust-text {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .footer-links {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+    .footer-links a {
+      margin: 0 10px;
+      color: #004aad;
+      font-weight: 500;
+    }
+
+    .disclaimer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+
+    section.info-section {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+
+    section.info-section h3 {
+      color: #004aad;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    section.info-section p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #999;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero-image, .hero-text {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -145,7 +168,7 @@
     <div class="hero-text">
       <h1>Book Your Flight Instantly with Trusted Experts</h1>
       <p>24/7 support, best prices, and instant confirmation. Trusted by thousands worldwide.</p>
-      <a href="tel:+18556402178" class="call-button">📞 Call Now: +1 855-640-2178</a>
+      <a href="tel:+18556402178" class="call-button">🟢 Call Now: +1 855-640-2178</a>
     </div>
     <div class="hero-image">
       <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Airplane flying" />
@@ -155,17 +178,59 @@
   <section class="trust-section">
     <h2>Why Choose SkyFlyer?</h2>
     <div class="trust-icons">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Verified_icon.svg/1200px-Verified_icon.svg.png" alt="Verified" title="Verified Service" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Customer_Satisfaction_Icon.svg/1200px-Customer_Satisfaction_Icon.svg.png" alt="Customer Satisfaction" title="Customer Satisfaction" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/24-hours-clock-icon.svg/1200px-24-hours-clock-icon.svg.png" alt="24/7 Support" title="24/7 Support" />
+      <div>✅ Verified</div>
+      <div>💯 Customer Satisfaction</div>
+      <div>🕐 24/7 Support</div>
     </div>
     <p class="trust-text">Trusted by over 75,000 satisfied travelers worldwide. Instant support & secure booking guaranteed.</p>
   </section>
 
+  <div class="footer-links">
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms & Conditions</a>
+    <a href="#refund">Refund Policy</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#about">About Us</a>
+  </div>
+
+  <section id="about" class="info-section">
+    <h3>About Us</h3>
+    <p>SkyFlyer is an independent online flight booking service trusted by thousands of travelers. We provide instant bookings, 24/7 support, and the best available prices. Our mission is to make travel easier, safer, and more transparent for all.</p>
+  </section>
+
+  <section id="contact" class="info-section">
+    <h3>Contact Us</h3>
+    <p>Need help with a booking? Our team is available 24/7.</p>
+    <p>Email: skyflyerbooking@gmail.com</p>
+    <p>Phone: +1 855-640-2178</p>
+    <p>Address: SkyFlyer Inc., 1234 Liberty Avenue, Suite 210, New York, NY 10001, USA</p>
+  </section>
+
+  <section id="privacy" class="info-section">
+    <h3>Privacy Policy</h3>
+    <p>We respect your privacy and are committed to protecting your personal data. We only collect essential information required to process your bookings and never share your details with third parties without your consent.</p>
+  </section>
+
+  <section id="terms" class="info-section">
+    <h3>Terms & Conditions</h3>
+    <p>By using our website and booking services, you agree to our terms and conditions. These include, but are not limited to, using valid information, understanding third-party airline terms, and accepting changes or cancellations based on airline policy.</p>
+  </section>
+
+  <section id="refund" class="info-section">
+    <h3>Refund Policy</h3>
+    <p>Refunds depend on the fare rules of the airline. SkyFlyer facilitates refund requests but is not responsible for policies set by airlines. Non-refundable tickets may not be eligible for any refund.</p>
+  </section>
+
+  <div class="disclaimer">
+    Disclaimer: SkyFlyer is an independent travel booking platform and is not affiliated with any airline.
+  </div>
+
 </div>
 
 <footer>
-  © 2025 SkyFlyer. All rights reserved. Not affiliated with any airline.
+  📧 Email: skyflyerbooking@gmail.com<br>
+  📍 Address: SkyFlyer Inc., 1234 Liberty Avenue, Suite 210, New York, NY 10001, USA<br>
+  © 2025 SkyFlyer. All rights reserved.
 </footer>
 
 </body>
